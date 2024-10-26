@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shanti Senior Secondary School</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" />
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+        }
+
+        .nav-link:hover {
+            color: #FFD700;
+        }
+
+        .btn-hover:hover {
+            background-color: #FFD700;
+            color: #000;
+        }
+
+        .hero-bg {
+            background-image: url('https://i.ibb.co/rGk3fLW/background-image.jpg');
+            background-size: cover;
+            background-position: center;
+            height: 100vh;
+            color: #fff;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+        }
+
+        .hover-shadow:hover {
+            box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2);
+            transform: translateY(-5px);
+        }
+
+        .fixed-btn {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background-color: #1E3A8A;
+            color: #fff;
+            padding: 10px 20px;
+            border-radius: 5px;
+            text-align: center;
+            font-weight: bold;
+            cursor: pointer;
+            z-index: 10;
+            transition: background-color 0.3s ease;
+        }
+
+        .fixed-btn:hover {
+            background-color: #FFD700;
+            color: #000;
+        }
+    </style>
+</head>
+
+<body class="bg-gray-100 text-gray-800">
+
+    <!-- Navbar -->
+    <nav class="bg-blue-800 text-white p-4">
+        <div class="container mx-auto flex justify-between items-center">
+            <a href="#" class="text-lg font-semibold flex items-center">
+                <img src="https://i.ibb.co/XDT3kpg/logo-sps.png" alt="School Logo" class="h-10 mr-2">
+                Shanti Senior Secondary School
+            </a>
+            <div class="block md:hidden">
+                <button id="mobile-menu-button" class="focus:outline-none">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+            <ul class="hidden md:flex md:flex-wrap md:space-x-6" id="navbar">
+                <li><a href="#home" class="nav-link text-white">Home</a></li>
+                <li><a href="#about" class="nav-link text-white">About Us</a></li>
+                <li><a href="#programs" class="nav-link text-white">Programs</a></li>
+                <li><a href="#facilities" class="nav-link text-white">Facilities</a></li>
+                <li><a href="#contact" class="nav-link text-white">Contact Us</a></li>
+            </ul>
+        </div>
+        <!-- Mobile Menu -->
+        <div class="md:hidden" id="mobile-menu" style="display: none;">
+            <ul class="flex flex-col space-y-2 p-4">
+                <li><a href="#home" class="nav-link text-white">Home</a></li>
+                <li><a href="#about" class="nav-link text-white">About Us</a></li>
+                <li><a href="#programs" class="nav-link text-white">Programs</a></li>
+                <li><a href="#facilities" class="nav-link text-white">Facilities</a></li>
+                <li><a href="#contact" class="nav-link text-white">Contact Us</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Fixed Position Button -->
+    <div class="fixed-btn">
+        Admission Enquiry
+    </div>
+
+    <!-- Hero Section with Background Image -->
+    <section id="home" class="hero-bg">
+        <div class="relative z-10">
+            <h1 class="text-4xl md:text-5xl font-bold text-black">Welcome to Shanti Senior Secondary School</h1>
+            <p class="text-lg md:text-xl mt-4 text-black">Empowering Students for a Bright Future</p>
+        </div>
+    </section>
+
+    <!-- About Us Section -->
+    <section id="about" class="py-16 bg-white">
+        <div class="container mx-auto text-center">
+            <h2 class="text-3xl font-semibold text-blue-800 mb-4 hover-shadow transition duration-300">About Us</h2>
+            <p class="text-gray-700 max-w-2xl mx-auto">Shanti Senior Secondary School is committed to providing a balanced education that focuses on academic excellence, character development, and holistic growth. Our mission is to nurture confident, responsible citizens.</p>
+        </div>
+    </section>
+
+    <!-- Programs Section -->
+    <section id="programs" class="py-16 bg-gray-50">
+        <div class="container mx-auto text-center">
+            <h2 class="text-3xl font-semibold text-blue-800 mb-4 hover-shadow transition duration-300">Our Programs</h2>
+            <p class="text-gray-700 max-w-2xl mx-auto mb-12">We offer a wide range of programs to cater to the diverse needs and interests of our students, from academics to extracurricular activities.</p>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="bg-white p-8 rounded-lg shadow-md hover-shadow transition transform duration-300">
+                    <h3 class="text-xl font-semibold text-blue-800 mb-2">Science Stream</h3>
+                    <p class="text-gray-700">Our science stream is designed to foster analytical thinking and problem-solving skills, preparing students for careers in medicine, engineering, and research.</p>
+                </div>
+                <div class="bg-white p-8 rounded-lg shadow-md hover-shadow transition transform duration-300">
+                    <h3 class="text-xl font-semibold text-blue-800 mb-2">Commerce Stream</h3>
+                    <p class="text-gray-700">The commerce stream offers a strong foundation in business, finance, and economics, equipping students with the skills needed for success in the corporate world.</p>
+                </div>
+                <div class="bg-white p-8 rounded-lg shadow-md hover-shadow transition transform duration-300">
+                    <h3 class="text-xl font-semibold text-blue-800 mb-2">Arts Stream</h3>
+                    <p class="text-gray-700">Our arts stream encourages creativity, critical thinking, and cultural awareness, preparing students for careers in the humanities, social sciences, and more.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Facilities Section -->
+    <section id="facilities" class="py-16 bg-white">
+        <div class="container mx-auto text-center">
+            <h2 class="text-3xl font-semibold text-blue-800 mb-4 hover-shadow transition duration-300">School Facilities</h2>
+            <p class="text-gray-700 max-w-2xl mx-auto mb-12">Our school offers state-of-the-art facilities to support our students' academic and extracurricular pursuits, ensuring a well-rounded education.</p>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div class="bg-gray-100 p-8 rounded-lg shadow-md hover-shadow transition transform duration-300">
+                    <h3 class="text-xl font-semibold text-blue-800 mb-2">Modern Classrooms</h3>
+                    <p class="text-gray-700">Our classrooms are equipped with the latest technology to enhance the learning experience.</p>
+                </div>
+                <div class="bg-gray-100 p-8 rounded-lg shadow-md hover-shadow transition transform duration-300">
+                    <h3 class="text-xl font-semibold text-blue-800 mb-2">Science Labs</h3>
+                    <p class="text-gray-700">Our well-equipped labs provide students with hands-on experience in scientific exploration.</p>
+                </div>
+                <div class="bg-gray-100 p-8 rounded-lg shadow-md hover-shadow transition transform duration-300">
+                    <h3 class="text-xl font-semibold text-blue-800 mb-2">Library</h3>
+                    <p class="text-gray-700">Our extensive library resources support both academic research and recreational reading.</p>
+                </div>
+                <div class="bg-gray-100 p-8 rounded-lg shadow-md hover-shadow transition transform duration-300">
+                    <h3 class="text-xl font-semibold text-blue-800 mb-2">Sports Facilities</h3>
+                    <p class="text-gray-700">Our sports facilities encourage physical fitness and teamwork through a variety of activities.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Us Section -->
+    <section id="contact" class="bg-white py-12">
+        <div class="container mx-auto text-center">
+            <h2 class="text-4xl font-bold mb-4">Get in Touch</h2>
+            <form class="flex flex-col space-y-4">
+                <input type="text" placeholder="Name" class="py-2 pl-4 text-sm text-gray-700 border border-gray-300 rounded-lg">
+                <input type="email" placeholder="Email" class="py-2 pl-4 text-sm text-gray-700 border border-gray-300 rounded-lg">
+                <textarea placeholder="Message" class="py-2 pl-4 text-sm text-gray-700 border border-gray-300 rounded-lg"></textarea>
+                <button class="bg-blue-800 text-white py-2 rounded-lg hover:bg-blue-700">Send</button>
+            </form>
+        </div>
+    </section>
+
+    <footer class="bg-gray-800 text-white py-12">
+        <div class="container mx-auto flex justify-between items-center">
+            <!-- Left Side -->
+            <div>
+                <h3 class="text-xl font-bold mb-4">About Us</h3>
+                <p class="text-lg">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </div>
+
+            <!-- Middle Side -->
+            <div>
+                <h3 class="text-xl font-bold mb-4">Quick Links</h3>
+                <ul>
+                    <li class="mb-2"><a href="#" class="hover:text-gray-400">Home</a></li>
+                    <li class="mb-2"><a href="#" class="hover:text-gray-400">About</a></li>
+                    <li class="mb-2"><a href="#" class="hover:text-gray-400">Contact</a></li>
+                </ul>
+            </div>
+
+            <!-- Right Side -->
+            <div>
+                <h3 class="text-xl font-bold mb-4">Social Media</h3>
+                <div class="flex space-x-4">
+                    <a href="#" class="bg-gray-600 hover:bg-gray-700 rounded-full p-2"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="bg-gray-600 hover:bg-gray-700 rounded-full p-2"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="bg-gray-600 hover:bg-gray-700 rounded-full p-2"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Copyright Section -->
+        <div class="container mx-auto text-center mt-8">
+            <p>&copy; 2024 Your Company. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Toggle mobile menu
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        mobileMenuButton.addEventListener('click', () => {
+            const isMenuOpen = mobileMenu.style.display === 'block';
+            mobileMenu.style.display = isMenuOpen ? 'none' : 'block';
+        });
+    </script>
+</body>
+</html>
